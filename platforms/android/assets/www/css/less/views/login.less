@@ -1,0 +1,58 @@
+section.login{
+	width:100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	display: none;
+	text-align: center;
+	overflow-y:scroll;
+	h1 ,h5{
+		width:100%;
+		text-align:center;
+		font-weight:300;
+		color: #585858;
+	}
+
+	input{
+		display: inline;
+		width: 200px;
+		border: 2px solid #0093c2;
+		padding: 10px;
+		outline: none;
+		.rounded-corners(3px);
+	}
+	h5{
+		font-weight: 300;
+	}
+	a{
+		display: inline-block;
+		margin-top: 10px;
+		.rounded-corners(3px);
+	
+		padding: 10px;
+		outline: none;
+		background: #0093c2;
+		color: white;
+		font-size: 13px;
+	}
+	div.avatars{
+		width:100%;
+		.opacity(0);
+		display: inline-block;
+
+		img{
+			width: 50px;
+			height: 50px;
+			display: inline-block;
+			position: relative;
+			margin: 5px;
+			.rounded-corners(3px);
+			border-radius: 3px;
+			border: 2px solid white;
+		}
+	}
+	div.avatars.show{
+		.opacity(1);
+	}
+}

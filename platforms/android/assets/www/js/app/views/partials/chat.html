@@ -1,0 +1,26 @@
+<span ng-controller="chatController">
+	<span class="side"></span>
+	<i class="icon icon-3bar"></i>
+	<article>
+		<div class="roomName">
+			<input  ng-enter="changeRoom()" ng-blur="changeRoom();" type="text" ng-model ="settings.room" value="{{settings.room}}"/>	
+		</div>
+		<div class="users scrollBar" >
+ 			<p ng-repeat="user in users"><span>{{user.username}}</span><b>{{user.time}}</b></p>
+		</div>
+		
+		<div class="conversation scrollBar" >
+			<span class="fill"></span>
+      <span ng-repeat="line in history">
+        <p>{{line.username}}: {{line.msg}}</p>
+        <span class="time">{{line.time}}</span>
+      </span>        
+
+      <span ng-repeat="msg in system">
+        <p>{{msg.msg}}</p>
+        <span class="time">{{msg.time}}</span>
+      </span>
+		</div>
+		<input type="text" class="chatBox" placeholder="talk in hur..."/>	
+	</article>
+</span>

@@ -1,0 +1,23 @@
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes.dex : \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\helloworld\BuildConfig.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\helloworld\HelloWorld.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\helloworld\R$attr.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\helloworld\R$drawable.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\helloworld\R$string.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\helloworld\R$xml.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\helloworld\R.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\thatsMyStuff\BuildConfig.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\thatsMyStuff\HelloWorld.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\thatsMyStuff\R$attr.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\thatsMyStuff\R$drawable.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\thatsMyStuff\R$string.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\thatsMyStuff\R$xml.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\thatsMyStuff\R.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\thebookkeeper\BuildConfig.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\thebookkeeper\HelloWorld.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\thebookkeeper\R$attr.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\thebookkeeper\R$drawable.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\thebookkeeper\R$string.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\thebookkeeper\R$xml.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\classes\com\phonegap\thebookkeeper\R.class \
+c:\projects\thatsMyStuff\thatsMyStuff\platforms\android\ant-build\dexedLibs\classes-06e204e6ca0db96318123f7cd5fa7ca6.jar \

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html ng-app="thatsMyStuff">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <title>ThatsMyStuff</title>
+    </head>
+    <body class="show">
+
+        <div ng-view >  
+
+
+        </div>
+        
+        <script type="text/ng-template"  id="main.html">
+          <section class="landing" ng-class="{'ready': ready}" ng-controller="mainController">
+            <article ng-click="setup()">
+                <h1>DON`T</br> <b>TOUCH</b></br>THIS</h1>
+
+            </article>
+            <h1>relayr <br><b>DEMO APP</b</h1>
+          </section>          
+        </script>
+
+        <script type="text/ng-template"  id="setup.html">
+          <section class="setup" ng-controller="setupController">
+            <header>
+                <h1>Protected Object</h1>
+            </header>    
+
+            <article>
+                <input type="text" placeholder="Name of your object..." ng-model="protectObject.title" value="{{protectObject.title}}" />
+                <h2>What is the name of the object you`re protecting?</h2>
+            </article>
+            <a class="button" ng-click="submitObject(protectObject)">Done</a>
+          </section>
+        </script>        
+
+        <script type="text/ng-template"  id="protected.html">
+          <section class="protected" ng-controller="protectedController">
+            <article>
+                <h1>YOUR</h1><br> 
+                <h1><b> {{protectedObject.title}}</b></h1><br>
+                <h1>IS</h1><br> 
+                <h1><strong>SAFE</strong></h1>
+            </article>
+          </section>
+        </script>
+
+        <script type="text/ng-template"  id="alarm.html">
+          <section class="alarm" ng-controller="alarmController">
+            <audio id="a" controls loop autobuffer>
+                <source src="https://developer.relayr.io/assets/sounds/hammer-alarm.mp3" type="audio/mpeg">
+            </audio>
+
+            <article>
+                <h1>ALARM! </br> <p>{{time}}</p> </br> SOMEONE </br> <b>TOUCHED YOUR</b> </br>{{protectedObject.title}}! </h1>
+            </article>
+            <a class="button" ng-click="dismiss()">Dismiss</a>
+          </section>
+        </script>
+
+        <script src="http://cdn.pubnub.com/pubnub.min.js" ></script>
+        <script type="text/javascript" src="js/assets/jquery.js"></script>
+        <script src="js/assets/angular.js"></script>
+        <script src="js/assets/date.js"></script>
+        <script src="js/assets/angular-resource.js"></script>
+        <script src="js/assets/angular-route.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="PushNotification.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/app/app.js"></script>
+
+
+
+
+        <script src="js/app/controllers/errorControl.js"></script>
+        <script src="js/app/controllers/login.js"></script>
+        <script src="js/app/controllers/setup.js"></script>
+        <script src="js/app/controllers/protected.js"></script>
+        <script src="js/app/controllers/alarm.js"></script>
+        <script src="js/app/controllers/lobby.js"></script>
+
+
+
+
+        <script src="js/app/directives/ngEnter.js"></script>
+        <script src="js/app/directives/ngBlur.js"></script>
+    </body>
+</html>
