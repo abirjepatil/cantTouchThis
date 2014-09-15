@@ -9,9 +9,9 @@ app.controller('protectedController', function($scope,$location,$rootScope,setti
   });
   
   //Include your Relayr Keys
-  var appId= "456def81-1c82-491f-8738-2d14d12c8e18";
-  var deviceId= "8b0621a7-0a5f-407d-9172-3fa8f7bd6b89";
-  var token ="uwsyX8zEcPLXHeInhuppyvcn_VUrtTwK";
+  var appId= "3dc990e0-98a2-4c8f-9a98-744621c24731";
+  var deviceId= "ee7e9562-2b95-4c93-a1d3-fdbaaea5c160";
+  var token ="3RbUR6kjmGdWcJAyF5rrLzO0NGKVymHt";
 
 
   //POST to the API with the appId and deviceId in the url to get the credentials for Pubnub
@@ -46,7 +46,7 @@ app.controller('protectedController', function($scope,$location,$rootScope,setti
             message : function(data){
               //Listen for the raw data
               data = angular.fromJson(data)
-              
+              console.log("Data from sensor: ",data);
               if (data.prox < 2000){
                     
                 $location.path("/alarm");
