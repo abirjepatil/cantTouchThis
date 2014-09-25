@@ -3,17 +3,17 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.thatsMyStuff"
+        id        = "com.phonegap.cantTouchThis"
         version   = "1.0.0">
 
-    <name>thatsMyStuff</name>
+    <name>cantTouchThis</name>
 
     <description>
-        thatsMyStuff running on Node.JS with duelarcade
+        cantTouchThis using the WunderBar proximity sensor
     </description>
 
-    <author href="http://duelarcade.com" email="support@duelarcade.com">
-        duelarcade team
+    <author href="http://relayr.io.com" email="support@relayr.io.com">
+        relayr.io team
     </author>
 
     <!--
